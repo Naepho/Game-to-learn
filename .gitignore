@@ -33,3 +33,4 @@
 
 # VScode
 *.code-workspace
+.vscode
