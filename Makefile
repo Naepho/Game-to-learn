@@ -9,13 +9,13 @@ SRCEXT := cpp
 SOURCES := $(wildcard $(SRCDIR)/*.cpp)
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
 CFLAGS := -g -Wall -Wextra
-LIB := -L lib -lSFML-window -lSFML-system -mwindows
+LIB := -L lib -lSFML-window -lSFML-system -lSFML-graphics -mwindows
 INC := -I include
 $(TARGET): $(OBJECTS)
 	@echo " Linking...";
 	$(CC) $^ -o $(TARGET) $(LIB)
 $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
-	@mkdir $(BUILDDIR)
+	if not exist $(BUILDDIR) @mkdir $(BUILDDIR)
 	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
 clean:
 	@echo " Cleaning..."; 
