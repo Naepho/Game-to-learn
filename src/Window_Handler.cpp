@@ -14,6 +14,7 @@ Window_Handler::~Window_Handler()
 void Window_Handler::create(int x, int y, std::string title_in)
 {
     title = title_in;
+    size = sf::Vector2u(x, y);
     window.create(sf::VideoMode(x,y), title);
 }
 

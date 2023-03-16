@@ -11,6 +11,7 @@ class Window_Handler
 private:
     sf::RenderWindow window;
     std::string title;
+    sf::Vector2u size;
 public:
     Window_Handler();
     Window_Handler(int x, int y, std::string title_in);
