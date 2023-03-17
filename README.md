@@ -17,7 +17,8 @@ This game is made with C++ and SFML. It makes heavy use of classes. The goal is 
 
 ## Contributing
 
-Given the small scale of this project, please just create an issue. I'll try to quickly take a look at it, but with University, I can't promise anything.
+Given the small scale of this project, please just create an issue. I'll try to quickly take a look at it, but with University, I can't promise anything.  
+Also, see ![Contributing.md](CONTRIBUTING.md).
 
 ## Legal
 
