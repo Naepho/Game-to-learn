@@ -1,5 +1,10 @@
 # Game-to-learn
 
+![GitHub](https://img.shields.io/github/license/Naepho/Game-to-learn)
+![GitHub issues](https://img.shields.io/github/issues/Naepho/Game-to-learn)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Naepho/Game-to-learn)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Naepho/Game-to-learn)
+
 This project is based on an idea that Zanarque! had.
 
 ## Principle
