@@ -4,6 +4,10 @@
 #include <Window_Handler.hpp>
 #include <string>
 
+/*
+The game in itself
+It should contain the other classes
+*/
 class Game
 {
 private:

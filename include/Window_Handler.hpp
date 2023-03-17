@@ -6,6 +6,10 @@
 #include <SFML/System.hpp>
 #include <string>
 
+/*
+Class made to handle graphics
+Should be in the main thread
+*/
 class Window_Handler
 {
 private:

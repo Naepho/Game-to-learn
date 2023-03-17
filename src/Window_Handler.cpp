@@ -11,6 +11,9 @@ Window_Handler::Window_Handler(int x, int y, std::string title)
 Window_Handler::~Window_Handler()
 {}
 
+// Public functions
+
+// Creates the window
 void Window_Handler::create(int x, int y, std::string title_in)
 {
     title = title_in;
@@ -18,6 +21,7 @@ void Window_Handler::create(int x, int y, std::string title_in)
     window.create(sf::VideoMode(x,y), title);
 }
 
+// The main loop of the window
 void Window_Handler::loop()
 {
     while(window.isOpen()) {

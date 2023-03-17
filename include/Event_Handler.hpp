@@ -3,6 +3,10 @@
 
 #include <SFML/System.hpp>
 
+/*
+Class made to handle events
+Event storing and operations should be done in it
+*/
 class Event_Handler
 {
 private:

@@ -1,5 +1,6 @@
 #include <File_Handler.hpp>
 
+// Gets list of files
 File_Handler::File_Handler()
 {
     list_of_files = read_file("./bin/data/file_list");
@@ -10,6 +11,7 @@ File_Handler::~File_Handler()
     destroy_list(list_of_files)
 } 
 
+// Destroys a string_list allocated manually
 void destroy_list(string_list* list)
 {
     delete[] list->list;
@@ -18,6 +20,7 @@ void destroy_list(string_list* list)
 
 // Private functions
 
+// Returns the number of lines of a file
 int File_Handler::number_of_lines(std::string filename)
 {
     int number_of_lines = 0;
@@ -34,6 +37,7 @@ int File_Handler::number_of_lines(std::string filename)
     return number_of_lines;
 }
 
+// Reads a file to a string_list
 string_list* File_Handler::read_file(std::string filename)
 {
     list* = new string_list;
@@ -58,6 +62,7 @@ string_list* File_Handler::read_file(std::string filename)
     
 }
 
+// Writes a string_list to a file
 int File_Handler::write_file(std::string filename, string_list* list)
 {
     std::ofstream f;
@@ -80,12 +85,8 @@ int File_Handler::write_file(std::string filename, string_list* list)
 
 // Public functions
 
+// Returns the file_list
 std::string* File_Handler::get_file_list()
 {
-    return file_list;
-}
-
-int File_Handler::get_file_number()
-{
-    return number_of_files;
+    return list_of_files;
 }
