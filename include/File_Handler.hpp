@@ -2,19 +2,36 @@
 #define FILE_HANDLER
 
 #include <string>
-#include <iostream>
 #include <fstream>
-#include <vector>
+
+#include <File_Decryptor.hpp>
+
+typedef struct string_list
+{
+    std::string* list;
+    unsigned number_lines; 
+} string_list;
+
+
+void destroy_list(string_list list);
 
 class File_Handler
 {
 private:
-    std::vector<std::string> file_list;
+    string_list* list_of_files;
+
+    File_Decryptor decryptor;
+
+    string_list* read_file(std::string filename);
+    int number_of_lines(std::string filename);
+
+    int write_file(std::string filename, std::string* list);
 public:
     File_Handler();
     ~File_Handler();
 
-    std::vector<std::string> get_file_list();
+    string_list get_file_list();
+    int get_file_number();
 };
 
 #endif
